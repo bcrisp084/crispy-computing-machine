@@ -2,7 +2,7 @@ const inquirer = require("inquirer");
 const fs = require("fs");
 const util = require("util");
 const writeFileAsync = util.promisify(fs.writeFile);
-const prompt = require("prompt-checkbox");
+const Prompt = require("prompt-checkbox");
 
 function promptUser() {
   return inquirer.prompt([
@@ -37,7 +37,7 @@ function promptUser() {
       name: "contributions",
     },
     {
-      type: "input",
+      radio: true,
       message: "Please choose a license for your project",
       name: "license",
       choices: [
