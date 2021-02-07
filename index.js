@@ -1,9 +1,7 @@
 const inquirer = require("inquirer");
 const fs = require("fs");
-// const axios = require("axios").default;
 const util = require("util");
 const writeFileAsync = util.promisify(fs.writeFile);
-// const generateMarkdown = require("generateMarkdown.js");
 
 function promptUser() {
   return inquirer.prompt([
@@ -74,11 +72,11 @@ getUserData = async (answers) => {
 
 function createMarkDown(answers) {
   return `
-  // <img alt="NodeJS" src="https://img.shields.io/badge/node.js%20-%2343853D.svg?&style=for-the-badge&logo=node.js&logoColor=white"/>
+  <img alt="NodeJS" src="https://img.shields.io/badge/node.js%20-%2343853D.svg?&style=for-the-badge&logo=node.js&logoColor=white"/>
   # ${answers.username}
 
   ## Project Title
-  ${answers.ProjectTitle}
+  ${answers.projectTitle}
 
   ## Table of contents
   + [Description](#description)
@@ -120,7 +118,7 @@ promptUser()
     return writeFileAsync("README.md", md);
   })
   .then(function () {
-    console.log("Successfully wrote to README.md");
+    console.log("Success");
   })
   .catch(function (err) {
     console.log(err);
