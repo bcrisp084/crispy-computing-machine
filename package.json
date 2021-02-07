@@ -1,0 +1,25 @@
+{
+  "name": "crispy-computing-machine",
+  "version": "1.0.0",
+  "description": "A readme.md generator",
+  "main": "index.js",
+  "dependencies": {
+    "axios": "^0.21.1",
+    "fs": "^0.0.1-security",
+    "inquirer": "^7.3.3"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bcrisp084/crispy-computing-machine.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/bcrisp084/crispy-computing-machine/issues"
+  },
+  "homepage": "https://github.com/bcrisp084/crispy-computing-machine#readme"
+}
