@@ -1,10 +1,11 @@
 const inquirer = require("inquirer");
 const fs = require("fs");
-const axios = require("axios").default;
+// const axios = require("axios").default;
 const util = require("util");
 const writeFileAsync = util.promisify(fs.writeFile);
+// const generateMarkdown = require("generateMarkdown.js");
 
-function promptUser = () => {
+function promptUser() {
   return inquirer.prompt([
     {
       type: "input",
@@ -45,7 +46,7 @@ function promptUser = () => {
       type: "input",
       message: "Please choose a license for your project",
       name: "license",
-      choices: [
+      checkbox: [
         "Apache",
         "MIT",
         "Academic Free License v3.0",
@@ -58,7 +59,7 @@ function promptUser = () => {
       name: "email",
     },
   ]);
-};
+}
 
 getUserData = async (answers) => {
   try {
@@ -95,14 +96,32 @@ function createMarkDown(answers) {
   + [Email](#email)
 
   ## Instructions
+  Initiate the project by entering in the following command..
+  ${answers.instructions}
 
+  ## Usage
+   ${answers.usage}
 
+  ## License
+   ${answers.license}
 
-  
-  
-  
-  
-  
-  
-  `
+  ## Contributors
+   ${answers.contributions}
+
+  ## Tests
+   ${answers.testing}
+
+   ## Email
+   ${answers.email} `;
 }
+promptUser()
+  .then(function (answers) {
+    const md = createMarkDown(answers);
+    return writeFileAsync("README.md", md);
+  })
+  .then(function () {
+    console.log("Successfully wrote to README.md");
+  })
+  .catch(function (err) {
+    console.log(err);
+  });
