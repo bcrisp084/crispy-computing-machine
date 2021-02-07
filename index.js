@@ -73,7 +73,7 @@ getUserData = async (answers) => {
 function createMarkDown(answers) {
   return `
   <img alt="NodeJS" src="https://img.shields.io/badge/node.js%20-%2343853D.svg?&style=for-the-badge&logo=node.js&logoColor=white"/>
-  # ${answers.username}
+  # ${answers.userName}
 
   ## Project Title
   ${answers.projectTitle}
