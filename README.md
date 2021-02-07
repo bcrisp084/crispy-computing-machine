@@ -1,9 +1,9 @@
 
-  // <img alt="NodeJS" src="https://img.shields.io/badge/node.js%20-%2343853D.svg?&style=for-the-badge&logo=node.js&logoColor=white"/>
-  # undefined
+  <img alt="NodeJS" src="https://img.shields.io/badge/node.js%20-%2343853D.svg?&style=for-the-badge&logo=node.js&logoColor=white"/>
+  # bcrisp084
 
   ## Project Title
-  undefined
+  crispy-computing-machine
 
   ## Table of contents
   + [Description](#description)
@@ -22,10 +22,10 @@
 
   ## Instructions
   Initiate the project by entering in the following command..
-  npm install followed by node index.js to run it
+  npm install followed by the command of node index.js in the terminal
 
   ## Usage
-   it is desoigned to create a readme for any future projects
+   The app is designed to store the info of your project
 
   ## License
    MIT
