@@ -70,7 +70,7 @@ function createMarkDown(answers) {
   return `
   <img alt="NodeJS" src="https://img.shields.io/badge/node.js%20-%2343853D.svg?&style=for-the-badge&logo=node.js&logoColor=white"/>
   ## GitHub user name
-   ${answers.userName}
+  ${answers.userName}
 
   ## Project Title
   ${answers.projectTitle}
