@@ -2,6 +2,7 @@ const inquirer = require("inquirer");
 const fs = require("fs");
 const util = require("util");
 const writeFileAsync = util.promisify(fs.writeFile);
+const prompt = require("prompt-checkbox");
 
 function promptUser() {
   return inquirer.prompt([
@@ -37,14 +38,9 @@ function promptUser() {
     },
     {
       type: "input",
-      message: "Enter the project test information",
-      name: "testing",
-    },
-    {
-      type: "input",
       message: "Please choose a license for your project",
       name: "license",
-      checkbox: [
+      choices: [
         "Apache",
         "MIT",
         "Academic Free License v3.0",
@@ -88,11 +84,12 @@ function createMarkDown(answers) {
 
   + [Contributions](#contributions)
 
-  + [Testing](#testing)
-
   + [License](#license)
 
   + [Email](#email)
+
+  ## Description
+  ${answers.description}
 
   ## Instructions
   Initiate the project by entering in the following command..
@@ -106,9 +103,6 @@ function createMarkDown(answers) {
 
   ## Contributors
    ${answers.contributions}
-
-  ## Tests
-   ${answers.testing}
 
    ## Email
    ${answers.email} `;
