@@ -56,17 +56,6 @@ function promptUser() {
   ]);
 }
 
-getUserData = async (answers) => {
-  try {
-    const { data } = await axios.get(
-      `https://api.github.com/search/repositories?q=repo:${answers.username}/${answers.repo}`
-    );
-    return data;
-  } catch (err) {
-    console.log(err.message);
-  }
-};
-
 function createMarkDown(answers) {
   return `
 
@@ -105,14 +94,16 @@ function createMarkDown(answers) {
   ${answers.contributions}
 
   ## Questions
-  You can contact me on my GitHub account at (https://github.com/bcrisp08)
   ${answers.userName}
+  <br />
+  You can contact me on my GitHub account at (https://github.com/bcrisp084)
+  <br />
   You may can reach me by sending me an email at ${answers.email} `;
 }
 promptUser()
   .then(function (answers) {
     const md = createMarkDown(answers);
-    return writeFileAsync("README.md", md);
+    return writeFileAsync("generateREADME.MD", md);
   })
   .then(function () {
     console.log("Success");
