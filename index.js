@@ -4,17 +4,19 @@ const util = require("util");
 const writeFileAsync = util.promisify(fs.writeFile);
 const Prompt = require("prompt-checkbox");
 
+console.log("Hello, you are about to generate a readme.md for your project");
+
 function promptUser() {
   return inquirer.prompt([
     {
       type: "input",
-      message: "What is your GitHub user name?",
-      name: "userName",
+      message: "What is your Project title?",
+      name: "projectTitle",
     },
     {
       type: "input",
-      message: "What is your Project title?",
-      name: "projectTitle",
+      message: "What is your GitHub user name?",
+      name: "userName",
     },
     {
       type: "input",
@@ -37,7 +39,7 @@ function promptUser() {
       name: "contributions",
     },
     {
-      radio: true,
+      type: "list",
       message: "Please choose a license for your project",
       name: "license",
       choices: [
@@ -68,8 +70,7 @@ getUserData = async (answers) => {
 
 function createMarkDown(answers) {
   return `
-  <img alt="NodeJS" src="https://img.shields.io/badge/node.js%20-%2343853D.svg?&style=for-the-badge&logo=node.js&logoColor=white"/>
-  ## GitHub user name
+  # GitHub user name
   ${answers.userName}
 
   ## Project Title
@@ -96,16 +97,18 @@ function createMarkDown(answers) {
   ${answers.instructions}
 
   ## Usage
-   ${answers.usage}
+  ${answers.usage}
 
   ## License
-   ${answers.license}
+  ![badge](https://img.shields.io/badge/license-${answers.license}-brightgreen)
+  <br />
+  This application uses the ${answers.license} license.
 
   ## Contributors
-   ${answers.contributions}
+  ${answers.contributions}
 
-   ## Email
-   ${answers.email} `;
+  ## Email
+  ${answers.email} `;
 }
 promptUser()
   .then(function (answers) {

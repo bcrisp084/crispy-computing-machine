@@ -1,10 +1,9 @@
 
-  <img alt="NodeJS" src="https://img.shields.io/badge/node.js%20-%2343853D.svg?&style=for-the-badge&logo=node.js&logoColor=white"/>
-  ## GitHub user name
+  # GitHub user name
   bcrisp084
 
   ## Project Title
-  crispy-computing-machine
+  Should i bring an umbrella
 
   ## Table of contents
   + [Description](#description)
@@ -20,20 +19,22 @@
   + [Email](#email)
 
   ## Description
-  A readme generator
+  It is a weather app that produces the current weather of the location search plus a 5 day forecast
 
   ## Instructions
   Initiate the project by entering in the following command..
-  node index.js
+  you can fork the project from my github account
 
   ## Usage
-   It creates a readme that stores the project info
+  It is designed to work in chrome but should work in any browser to get the weather
 
   ## License
-   MIT
+  ![badge](https://img.shields.io/badge/license-MIT-brightgreen)
+  <br />
+  This application uses the MIT license.
 
   ## Contributors
-   none
+  Brian Crisp
 
-   ## Email
-   bcrisp084@yahoo.com 
+  ## Email
+  bcrisp084@yahoo.com 
