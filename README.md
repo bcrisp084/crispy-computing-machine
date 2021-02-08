@@ -1,40 +1,48 @@
+# GitHub user name
 
-  # GitHub user name
-  bcrisp084
+bcrisp084
 
-  ## Project Title
-  Should i bring an umbrella
+## Project Title
 
-  ## Table of contents
-  + [Description](#description)
+Should i bring an umbrella
 
-  + [Instructions](#instructions)
+## Table of contents
 
-  + [Usage](#usage)
+- [Description](#description)
 
-  + [Contributions](#contributions)
+- [Instructions](#instructions)
 
-  + [License](#license)
+- [Usage](#usage)
 
-  + [Email](#email)
+- [Contributions](#contributions)
 
-  ## Description
-  It is a weather app that produces the current weather of the location search plus a 5 day forecast
+- [License](#license)
 
-  ## Instructions
-  Initiate the project by entering in the following command..
-  you can fork the project from my github account
+- [Email](#email)
 
-  ## Usage
-  It is designed to work in chrome but should work in any browser to get the weather
+## Description
 
-  ## License
-  ![badge](https://img.shields.io/badge/license-MIT-brightgreen)
-  <br />
-  This application uses the MIT license.
+It is a weather app that produces the current weather of the location search plus a 5 day forecast
 
-  ## Contributors
-  Brian Crisp
+## Instructions
 
-  ## Email
-  bcrisp084@yahoo.com 
+Initiate the project by entering in the following command..
+you can fork the project from my github account
+
+## Usage
+
+It is designed to work in chrome but should work in any browser to get the weather
+
+## License
+
+![badge](https://img.shields.io/badge/license-MIT-brightgreen)
+<br />
+This application uses the MIT license.
+
+## Contributors
+
+Brian Crisp
+
+## Email
+
+bcrisp084@yahoo.com

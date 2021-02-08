@@ -2,7 +2,6 @@ const inquirer = require("inquirer");
 const fs = require("fs");
 const util = require("util");
 const writeFileAsync = util.promisify(fs.writeFile);
-const Prompt = require("prompt-checkbox");
 
 console.log("Hello, you are about to generate a readme.md for your project");
 
@@ -70,10 +69,10 @@ getUserData = async (answers) => {
 
 function createMarkDown(answers) {
   return `
-  # GitHub user name
-  ${answers.userName}
 
-  ## Project Title
+  ![badge](https://img.shields.io/badge/license-${answers.license}-brightgreen)
+
+  # Project Title
   ${answers.projectTitle}
 
   ## Table of contents
@@ -87,7 +86,7 @@ function createMarkDown(answers) {
 
   + [License](#license)
 
-  + [Email](#email)
+  + [Questions](#questions)
 
   ## Description
   ${answers.description}
@@ -100,15 +99,15 @@ function createMarkDown(answers) {
   ${answers.usage}
 
   ## License
-  ![badge](https://img.shields.io/badge/license-${answers.license}-brightgreen)
-  <br />
   This application uses the ${answers.license} license.
 
   ## Contributors
   ${answers.contributions}
 
-  ## Email
-  ${answers.email} `;
+  ## Questions
+  You can contact me on my GitHub account at (https://github.com/bcrisp08)
+  ${answers.userName}
+  You may can reach me by sending me an email at ${answers.email} `;
 }
 promptUser()
   .then(function (answers) {
