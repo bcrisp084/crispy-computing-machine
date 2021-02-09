@@ -19,4 +19,4 @@ https://github.com/bcrisp084/crispy-computing-machine
 
 ##Demo
 
-[chrome-extension://mmeijimgabbpbgpdklnllpncmdofkcpn/ng/app/app.html#/files/ba80bcbe-b268-44d1-y215-5c47955db908](url)
+https://drive.google.com/file/d/1lkF2JC5MZPsiFvzh1TaiOw0eV9815xfC/view?usp=sharing
