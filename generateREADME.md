@@ -3,7 +3,7 @@
   ![badge](https://img.shields.io/badge/license-MIT-brightgreen)
 
   # Project Title
-  Should I bring an umbrella
+  Should i bring an umbrella
 
   ## Table of contents
   + [Description](#description)
@@ -19,13 +19,13 @@
   + [Questions](#questions)
 
   ## Description
-  A weather dashboard that produces the current weather plus a five day forecast for the location chosen
+  A weather dashboard that produces the current weather plus a five day forecast
 
   ## Instructions
-  The application can be forked from my GitHub and all that is required is to enter a location in the search box
+  The app can be forked from my github repo
 
   ## Usage
-  The application can be used by anyone for any reason
+  anyone can use this app for any reason
 
   ## License
   This application uses the MIT license.
