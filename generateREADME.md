@@ -1,9 +1,9 @@
 
 
-  ![badge](https://img.shields.io/badge/license-MIT-brightgreen)
+  ![badge](https://img.shields.io/badge/license-Apache-brightgreen)
 
   # Project Title
-  Should i bring an umbrella
+  f
 
   ## Table of contents
   + [Description](#description)
@@ -19,23 +19,23 @@
   + [Questions](#questions)
 
   ## Description
-  A weather dashboard that produces the current weather plus a five day forecast
+  f
 
   ## Instructions
-  The app can be forked from my github repo
+  f
 
   ## Usage
-  anyone can use this app for any reason
+  f
 
   ## License
-  This application uses the MIT license.
+  This application uses the Apache license.
 
   ## Contributors
-  Brian Crisp
+  f
 
   ## Questions
-  bcrisp084
+  f
   <br />
   You can contact me on my GitHub account at (https://github.com/bcrisp084)
   <br />
-  You may can reach me by sending me an email at bcrisp084@yahoo.com 
+  You may can reach me by sending me an email at f 

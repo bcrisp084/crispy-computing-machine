@@ -29,7 +29,7 @@ function promptUser() {
     },
     {
       type: "input",
-      message: "Enter your the application usage information",
+      message: "Enter your application usage information",
       name: "usage",
     },
     {
