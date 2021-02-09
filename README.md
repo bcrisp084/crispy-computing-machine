@@ -19,4 +19,4 @@ https://github.com/bcrisp084/crispy-computing-machine
 
 ##Demo
 
-<iframe src="https://drive.google.com/file/d/1lkF2JC5MZPsiFvzh1TaiOw0eV9815xfC/preview" width="640" height="480"></iframe>
+https://drive.google.com/file/d/1lkF2JC5MZPsiFvzh1TaiOw0eV9815xfC/preview
