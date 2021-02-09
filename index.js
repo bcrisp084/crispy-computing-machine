@@ -81,7 +81,6 @@ function createMarkDown(answers) {
   ${answers.description}
 
   ## Instructions
-  Initiate the project by entering in the following command..
   ${answers.instructions}
 
   ## Usage
